@@ -1,0 +1,412 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*.................. Commom style or utilities Begins.............*/
+
+/*------------------ Navigation-------------- */
+nav {
+    height: 94px;
+    background-color: #562EFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.us {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+}
+
+.plan img {
+    width: 40.42px;
+    height: 51px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+}
+
+.idea {
+    width: 54px;
+    height: 36px;
+    color: white;
+    font-size: 24px;
+}
+
+
+
+/*------------------ Navigation-------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+
+}
+
+/*....... Common style end...................*/
+
+/*.......................First Article style Begins......(Top-Playesr)............ */
+
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player img {
+    height: 56px;
+    width: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
+
+    font-size: 18px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+/* .......................First Article Style End.......(Top-Playesr)... */
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+    margin: 30px 0px 28px;
+
+}
+
+/*...................Top Blogs Style Begins...............*/
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+
+}
+
+.blog {
+    display: flex;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-author {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.blog-author a {
+    color: #562EFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*...................Top Blogs Style End...............*/
+
+/*...................last Section begin................*/
+
+.all-course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23.61px;
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+    border-radius: 10px;
+}
+
+.course {
+    Width: 257.42px;
+    Height: 269.79px;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.19));
+    box-shadow: 2px 2px rgba(38, 23, 23, 0.07);
+}
+
+.course-title {
+    font-family: 'roboto';
+    font-weight: 800;
+    font-size: 20.03px;
+}
+
+.course-author {
+    color: #ED6B4F;
+    font-family: 'roboto';
+    font-size: 14.69px;
+    font-weight: 400;
+}
+
+.rating-side {
+    display: flex;
+    align-items: center;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star {
+    Width: 12.25px;
+    Height: 11.75px;
+    margin-right: 3.24px;
+}
+
+.fa-star.gray {
+    color: #AEAEAE;
+}
+
+.rate {
+    color: #A2A2A2;
+    width: 21.37px;
+    height: 22.7px;
+    margin-left: 10.71px;
+
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    height: 29.38px;
+    width: 87.83px;
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+    margin-left: 25.38px;
+    padding: 0px 6px;
+}
+
+.fa-clock {
+    margin-right: 5.42px;
+}
+
+/*...................last Section End................*/
+
+/*....................
+    Media Queries
+....................... */
+
+
+/*.............. For MObile Devise.......... */
+@media screen and (max-width:576px) {
+
+    /* ----------navigation------ */
+
+    .idea {
+        font-size: 16px;
+    }
+
+
+    .link a {
+        font-size: 2vw;
+    }
+
+    .plan img {
+        height: 22px;
+        width: 22px;
+    }
+
+    .profile img {
+        height: 2vw;
+        width: 2vw;
+    }
+
+
+    /* Top player section */
+
+    .container {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 12px;
+    }
+
+    .player img {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player-name {
+        font-size: 1vw;
+    }
+
+    /* Top Blog section */
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog .thumbnail img {
+        width: 80px;
+        height: 60px;
+
+    }
+
+    .blog-title {
+        font-size: 10px;
+    }
+
+    .blog-author {
+        font-size: 8px;
+    }
+
+    .blog-author a {
+        font-size: 9px;
+    }
+
+    /*---------------- Another Section--------------*/
+
+    .all-course {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        row-gap: 25px;
+
+    }
+
+    .course img {
+        width: 150px;
+        height: 90px;
+        border-radius: 10px;
+    }
+
+    .course-title {
+        font-family: 'roboto';
+        font-weight: 800;
+        font-size: 15px;
+    }
+
+    .duration {
+        display: flex;
+        align-items: center;
+        height: 20.38px;
+        width: 60.83px;
+        background-color: #FFE4E8;
+        border-radius: 14.6913px;
+        margin-left: 25.38px;
+        padding: 0px 6px;
+        font-size: 10px;
+    }
+
+    .fa-clock {
+        margin-right: 5.42px;
+        font-size: 10px;
+    }
+
+
+}
+
+/*...........For tablet........ */
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    /* ----------navigation------ */
+
+    header {
+        width: 100%;
+    }
+
+    .idea {
+        font-size: 3vw;
+    }
+
+    .plan img {
+        height: 4vw;
+        width: 4vw;
+    }
+
+    .link a {
+        font-size: 1vw;
+    }
+
+    .profile img {
+        height: 3vw;
+        width: 3vw;
+    }
+
+
+    /* Top player section */
+    .container {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 2vw;
+    }
+
+    .player img {
+        height: 7vw;
+        width: 7vw;
+    }
+
+    .player-name {
+        font-size: 2vw;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
+
+
+    /* Top-Blogs */
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker</title>
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(20px);
+            border: 1px solid whitesmoke;
+            height: 800px;
+            background-color: black;
+
+        }
+
+        .circle-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 6px solid pink;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border-top: 3px solid red;
+            animation: Hacked 1s .1s infinite linear;
+            animation-play-state: running;
+        }
+
+        .circle-2 {
+            border: 5px solid purple;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border-bottom: 2px solid pink;
+
+
+        }
+
+        @keyframes Hacked {
+
+            0% {
+                transform: rotate(0deg);
+
+            }
+
+            100% {
+                transform: rotate(-360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My braine right now</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="circle-1">
+                <div class="circle-2"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
